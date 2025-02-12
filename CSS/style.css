@@ -1,0 +1,128 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+        }
+        .left-column {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .left-column img {
+            width: 500px;
+            height: auto; /* Mantiene la proporción original de la imagen */
+            transform: translateX(-100px); /* Ajusta el valor según lo que necesites */
+          }
+          
+    
+        
+    
+    
+        
+        
+        .overlay-bar {
+            position: absolute;
+            width: 80%;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5); /* Color de la franja */
+            top: 10%;
+            left: 10%;
+            border-radius: 10px;
+        }
+        
+             
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Asegurar que el ancho sea fijo */
+            text-align: center;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .card form {
+            width: 100%; /* Asegurar que los elementos internos ocupen el ancho de la card */
+        }
+        
+        .card input {
+            width: 85%; /* Mantener alineado con el botón */
+            padding: 10px;
+            margin: 4px 0; /* Reducir espacio entre usuario y contraseña */
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        .card input[type="password"] {
+            margin-bottom: 12px; /* Agregar espacio entre contraseña y botón */
+        }
+        
+        .card button {
+            width: 85%;
+            background-color: #0095f6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .card a {
+            display: block;
+            margin-top: 10px;
+            color: #00376b;
+            text-decoration: none;
+        
+        }
+        .fb-login {
+            display: flex;
+            align-items: center; /* Centra el icono con el texto */
+            justify-content: center; /* Mantiene el texto alineado */
+            gap: 8px; /* Espacio entre el logo y el texto */
+            text-decoration: none;
+            color: #1877f2; /* Azul oficial de Facebook */
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .fb-icon {
+            width: 20px;  /* Ajustar el tamaño del logo */
+            height: 20px;
+        }
+        
+    
+        
+        .download-buttons img {
+            width: auto;  /* Ajusta el ancho según lo necesites */
+            height: auto;  /* Mantiene la proporción de la imagen */
+            max-height: 50px; /* Opcional: limita la altura */
+        }
+        
+        
+        
+  
