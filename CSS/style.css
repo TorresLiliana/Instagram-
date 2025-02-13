@@ -23,14 +23,10 @@
         .left-column img {
             width: 500px;
             height: auto; /* Mantiene la proporción original de la imagen */
-            transform: translateX(-100px); /* Ajusta el valor según lo que necesites */
-          }
-          
+            transform: translateX(-90px); /* Ajusta el valor según lo que necesites */
+            
+        }
     
-        
-    
-    
-        
         
         .overlay-bar {
             position: absolute;
@@ -68,7 +64,7 @@
         }
         
         .card input {
-            width: 85%; /* Mantener alineado con el botón */
+            width:95%; /* Mantener alineado con el botón */
             padding: 10px;
             margin: 4px 0; /* Reducir espacio entre usuario y contraseña */
             border: 1px solid #ddd;
@@ -92,13 +88,18 @@
             cursor: pointer;
         }
         
-        .card a {
-            display: block;
-            margin-top: 10px;
-            color: #00376b;
-            text-decoration: none;
-        
+        .card p {
+            display: inline-flex; /* Hace que el texto y el enlace estén en la misma línea */
+            align-items: center; /* Alinea verticalmente el texto con el enlace */
         }
+        
+        .card a {
+            margin-left: 5px; /* Espacio entre el texto y el enlace */
+            text-decoration: none; /* Si quieres que el enlace esté subrayado */
+        }
+        
+        
+    
         .fb-login {
             display: flex;
             align-items: center; /* Centra el icono con el texto */
@@ -122,6 +123,54 @@
             height: auto;  /* Mantiene la proporción de la imagen */
             max-height: 50px; /* Opcional: limita la altura */
         }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        
+        main {
+            flex: 1;
+            display: flex;
+        }
+        
+        .left-column, .right-column {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer {
+            background-color: #fafafa;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #262626;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .footer-links a {
+            text-decoration: none;
+            color: #262626;
+            margin: 5px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        
         
         
         
